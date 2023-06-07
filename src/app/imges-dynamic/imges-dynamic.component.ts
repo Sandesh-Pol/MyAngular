@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class ImgesDynamicComponent {
   url = "assets/img1.png"
   allImages = [
-    {img,'assets/img2.png'},
-    {img,'assets/img2.png'},
-    {img,'assets/images.png'},
+    {img:'assets/img2.png'},
+    {img:'assets/img2.png'},
+    {img:'assets/images.png'},
   ]
   constructor(){}
   changeImg(){
