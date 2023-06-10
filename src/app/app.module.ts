@@ -7,6 +7,10 @@ import { ImgesDynamicComponent } from './imges-dynamic/imges-dynamic.component';
 import * as parantComponent from './parant/parant.component';
 import { ChildComponent } from './child/child.component';
 import { NormalComponent } from './normal/normal.component';
+import { AComComponent } from './Comp-Communication/a-com/a-com.component';
+import { BComComponent } from './Comp-Communication/b-com/b-com.component';
+import { TwoWayDataBindingComponent } from './Comp-Communication/two-way-data-binding/two-way-data-binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +18,15 @@ import { NormalComponent } from './normal/normal.component';
     ImgesDynamicComponent,
     parantComponent.ParantComponent,
     ChildComponent,
-    NormalComponent
+    NormalComponent,
+    AComComponent,
+    BComComponent,
+    TwoWayDataBindingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

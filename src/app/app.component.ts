@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MyApp2';
+  sendData = 'This is data from perant'
+  getDataFromChils = ''
+  redData(data:any){
+    this.getDataFromChils = data
+  }
 }

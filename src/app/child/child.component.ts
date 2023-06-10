@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input ,EventEmitter,Output} from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -8,6 +8,9 @@ import { Component, Input } from '@angular/core';
 export class ChildComponent {
  
   @Input() giveMeData:any;
-  
+  @Output() newItemEvent = new EventEmitter();
   constructor(){}
+  sendDataMeathos(){
+    this.newItemEvent.emit('This is child')
+  }
 }
